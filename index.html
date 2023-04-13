@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+</head>
+<style>
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+</style>
+
+<body>
+    <section>
+        <div class="hero"><img src="images/image-hero-mobile.png"></div>
+        <header>
+            <div class="logo"><a href=""><img src="images/logo.svg" alt=""></a></div>
+            <div class="toggle"></div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="">Login</a></li>
+                    <button type>Register</button>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h1>Make<br>remote work</h1>
+                <h2>Make remote work</h2>
+                <p>Get your team in sync no matter your location. <br> Streamline processes, create team rituals and
+                    <br> watch productivity soar.
+                </p>
+                <a href="">Learn more</a>
+            </div>
+            <div class="imgbox">
+                <img src="images/image-hero-desktop.png">
+            </div>
+            <div class="all-logos">
+                <div class="each-logo">
+                    <img src="images/client-databiz.svg">
+                </div>
+                <div class="each-logo">
+                    <img src="images/client-audiophile.svg">
+                </div>
+                <div class="each-logo">
+                    <img src="images/client-meet.svg">
+                </div>
+                <div class="each-logo">
+                    <img src="images/client-maker.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Emmanuella</a>.
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
