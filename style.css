@@ -1,219 +1,286 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "poppins" sans-serif;
 }
 body {
-  background: hsl(0, 0%, 98%);
+  background-color: var(--Almost-White);
+  font-family: "Epilogue", sans-serif;
 }
-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
+nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: #fff;
-}
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.hero {
-  display: none;
-}
-.nav-links {
-  flex: 1;
-  text-align: left;
-}
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  position: relative;
-  padding: 8px 15px;
-  font-weight: bold;
-  position: relative;
-}
-.nav-links ul li a {
-  color: hsl(0, 0%, 41%);
-  text-decoration: none;
-  font-size: 16px;
-}
-.nav-links ul li a:hover {
-  color: hsl(0, 0%, 8%);
-}
-.links {
-  flex: 1;
-  text-align: right;
-}
-.links ul li {
-  list-style: none;
-  display: inline-block;
-  position: relative;
-  padding: 8px 15px;
-  font-weight: bold;
-  position: relative;
-}
-.links ul li a {
-  color: hsl(0, 0%, 41%);
-  text-decoration: none;
-  font-size: 16px;
-}
-.links ul li a:hover {
-  color: hsl(0, 0%, 8%);
+  padding: 10px 45px;
 }
 .logo {
   padding-top: 8px;
-  margin-right: 20px;
-}
-button {
-  display: inline-block;
-  color: hsl(0, 0%, 41%);
-  text-decoration: none;
-  border: 1px solid black;
-  padding: 10px 20px;
-  font-size: 13px;
-  background: transparent;
-  border-radius: 10px;
-  text-align: center;
-  cursor: pointer;
   margin-left: 20px;
 }
-button:hover {
-  color: hsl(0, 0%, 8%);
-  transition: 1s;
-}
-.content {
-  position: relative;
-  width: 100%;
+.container {
   display: flex;
   justify-content: space-between;
+  width: 90%;
   align-items: center;
-  margin-left: 80px;
+  background: var(--Almost-White);
 }
-.content .textbox {
-  position: relative;
-  max-width: 600px;
+.leftcontainer {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
 }
-.content .textbox h1 {
-  font-size: 80px;
-  line-height: 1em;
-  font-weight: 600;
+.left-tab {
+  display: flex;
 }
-.content .textbox h2 {
-  display: none;
+.right-tab {
+  display: flex;
 }
-.content .textbox p {
-  color: hsl(0, 0%, 41%);
-  font-size: 20px;
-  margin: 30px 0;
+.container ul {
+  list-style: none;
 }
-.content .textbox a {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 34px;
-  background: hsl(0, 0%, 8%);
-  color: #fff;
-  border-radius: 10px;
+.container ul li {
+  padding: 1.3rem;
+}
+.container ul li a {
+  color: var(--Medium-Gray);
   font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
   text-decoration: none;
 }
-.content .textbox a:hover {
-  border: 1px solid black;
-  background: transparent;
-  transition: 1s;
-  color: hsl(0, 0%, 8%);
-  font-weight: bold;
+.container ul li a:hover {
+  color: black;
 }
-.content .imgbox {
-  width: 600px;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 100px;
-  margin-top: 50px;
+.rightcontainer ul li:last-child {
+  border: 1px solid var(--Almost-Black);
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px auto 10px;
+  padding: 10px 20px;
 }
-.content .imgbox img {
-  max-width: 350px;
+.cancel-img {
+  display: none;
 }
-.all-logos {
+.features,
+.company {
+  display: none;
+  background-color: white;
+  box-shadow: 0 0 20px -4px var(--Medium-Gray);
+  border-radius: 10px;
   position: absolute;
+  top: 6rem;
+}
+.features {
+  left: 7rem;
+}
+
+.company {
+  left: 20rem;
+}
+
+.features ul,
+.company ul {
+  padding: 10px 20px;
+}
+
+.features ul li,
+.company ul li {
+  padding: 10px;
+}
+
+.features ul li img,
+.company ul li img {
+  display: inline-block;
+  margin-right: 20px;
+}
+.rightcontainer {
   display: flex;
-  left: 16%;
-  bottom: -50px;
-  transform: translateX(-50%);
+  align-items: center;
+  padding: 8px 15px;
 }
-.each-logo {
-  padding: 10px 12px;
-  margin-top: 70px;
+.drop-down {
+  display: none;
 }
-.each-logo img {
-  width: 80px;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Almost-White);
 }
-@media (max-width: 990px) {
-  header {
-    padding: 20px;
-  }
-  header .logo {
-    max-width: 20px;
-  }
-  header ul {
-    display: none;
-  }
-  section {
-    padding: 20px 20px 120px;
-    flex-direction: column;
-  }
-  .hero {
-    display: flex;
-    width: 100%;
-    margin-top: 100px;
-    background-position: cover;
-  }
-  .hero img {
-    max-width: 450px;
-  }
-  .content .imgbox {
-    display: none;
-  }
-  .content {
-    display: flex;
-    position: absolute;
-    margin-top: 70%;
-    max-width: 100%;
-  }
-  .content .textbox h1 {
-    display: none;
-  }
-  .content .textbox h2 {
-    font-size: 40px;
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-  }
-  .content .textbox p {
-    font-size: 20px;
-    text-align: center;
-    padding: 0 10px;
-  }
-  .content a {
-    align-items: center;
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 3rem 10rem;
+}
+.left-content {
+  width: 43%;
+}
+
+.left-content h1 {
+  font-size: 4rem;
+}
+
+.left-content p {
+  color: var(--Medium-Gray);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+button {
+  background-color: var(--Almost-Black);
+  border-radius: 10px;
+  border-width: 0;
+  color: var(--Almost-White);
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: var(--Almost-White);
+  border: 1px solid var(--Almost-Black);
+  color: var(--Almost-Black);
+}
+.partners {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.right-content img {
+  height: 450px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 1200px) {
+  nav {
+    justify-content: space-between;
+    position: relative;
   }
 
-  .all-logos {
+  .container {
+    background-color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    align-items: baseline;
+    right: 0;
+    padding: 0;
+    display: none;
+  }
+
+  .leftcontainer {
+    padding: 3rem 0 0 1.5rem;
+  }
+
+  .rightcontainer {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 106vh;
+  }
+
+  .left-tab,
+  .right-tab {
+    display: block;
+    padding: 0;
+  }
+
+  .cancel-img {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .features,
+  .company {
+    box-shadow: none;
+    border-radius: 0;
+    position: static;
+    margin-left: 1rem;
+  }
+  .main-container {
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
-    margin-left: 100px;
-    margin-bottom: -50px;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .right-content img {
+    content: url(images/image-hero-mobile.png);
+    height: 500px;
+    width: 100%;
+  }
+
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .left-content h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .left-content p {
+    text-align: center;
+  }
+
+  .drop-down {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 70%;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .right-content img {
+    content: url(images/image-hero-mobile.png);
+    height: 350px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .left-content h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .left-content p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .partners {
+    gap: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .partners div img {
+    width: 70px;
   }
 }
